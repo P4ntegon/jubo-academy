@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>যুব উন্নয়ন কারিগরি কম্পিউটার একাডেমি — Premium Computer Academy in Pekua</title>
+<meta name="description" content="Jubo Unnayan Karigoree Computer Academy in Pekua offers 8 government-recognized career programs — Graphics Design, AutoCAD, Web Design, Outsourcing, and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"','system-ui','sans-serif'],
+        bn: ['"Hind Siliguri"','system-ui','sans-serif'],
+      },
+      colors: {
+        bg: '#0A0F2C',
+        bg2: '#0d1338',
+        accent: '#3D7BFF',
+        accent2: '#5AA7FF',
+        gold: '#E9B949',
+        muted: '#8a93b8',
+      },
+      boxShadow: {
+        glow: '0 10px 40px -10px rgba(61,123,255,.45)',
+        card: '0 20px 60px -20px rgba(0,0,0,.6)',
+      },
+      animation: {
+        'float-slow': 'float 8s ease-in-out infinite',
+        'fade-in': 'fadeIn .8s ease both',
+      },
+      keyframes: {
+        float: { '0%,100%':{transform:'translateY(0)'}, '50%':{transform:'translateY(-18px)'} },
+        fadeIn: { '0%':{opacity:0, transform:'translateY(12px)'}, '100%':{opacity:1, transform:'translateY(0)'} },
+      }
+    }
+  }
+}
+</script>
+<style>
+  html,body{background:#0A0F2C;color:#e7ecff;}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;}
+  .font-bn{font-family:'Hind Siliguri',system-ui,sans-serif;}
+  .glass{background:rgba(255,255,255,.05);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.08);}
+  .glass-strong{background:rgba(10,15,44,.75);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06);}
+  .grid-pattern{background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px;}
+  .mesh-bg{position:absolute;inset:0;background:
+     radial-gradient(60% 50% at 20% 20%, rgba(61,123,255,.18), transparent 60%),
+     radial-gradient(50% 40% at 80% 30%, rgba(233,185,73,.10), transparent 60%),
+     radial-gradient(60% 60% at 70% 90%, rgba(90,167,255,.12), transparent 60%);}
+  .text-gradient{background:linear-gradient(90deg,#5AA7FF,#3D7BFF);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .text-gradient-gold{background:linear-gradient(90deg,#F4D27A,#E9B949);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .btn-accent{background:linear-gradient(135deg,#3D7BFF,#5AA7FF);color:#fff;}
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  ::selection{background:#3D7BFF;color:#fff;}
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- NAV -->
+<header id="nav" class="fixed inset-x-0 top-0 z-50 py-4 transition-all">
+  <div class="container mx-auto max-w-7xl px-4 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <div class="size-11 rounded-xl bg-white/95 grid place-items-center shadow-glow p-1">
+        <img src="assets/logo.png" alt="logo" class="size-full object-contain"/>
+      </div>
+      <div class="leading-tight">
+        <div class="font-bn text-sm font-bold">যুব উন্নয়ন কারিগরি</div>
+        <div class="text-[10px] tracking-widest uppercase text-muted">Computer Academy</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-1">
+      <a href="#about" class="px-4 py-2 rounded-lg text-sm text-muted hover:text-white hover:bg-white/5"><span class="font-bn">পরিচিতি</span> <span class="text-xs opacity-60">About</span></a>
+      <a href="#courses" class="px-4 py-2 rounded-lg text-sm text-muted hover:text-white hover:bg-white/5"><span class="font-bn">কোর্সসমূহ</span> <span class="text-xs opacity-60">Courses</span></a>
+      <a href="#why" class="px-4 py-2 rounded-lg text-sm text-muted hover:text-white hover:bg-white/5"><span class="font-bn">কেন আমরা</span> <span class="text-xs opacity-60">Why Us</span></a>
+      <a href="#gallery" class="px-4 py-2 rounded-lg text-sm text-muted hover:text-white hover:bg-white/5"><span class="font-bn">গ্যালারি</span> <span class="text-xs opacity-60">Gallery</span></a>
+      <a href="#contact" class="px-4 py-2 rounded-lg text-sm text-muted hover:text-white hover:bg-white/5"><span class="font-bn">যোগাযোগ</span> <span class="text-xs opacity-60">Contact</span></a>
+    </nav>
+    <a href="#contact" class="hidden sm:inline-flex items-center h-10 px-5 rounded-xl btn-accent text-sm font-semibold shadow-glow font-bn">ভর্তি হন</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
+  <div class="mesh-bg"></div>
+  <div class="absolute inset-0 grid-pattern opacity-40"></div>
+  <div class="absolute top-32 left-10 size-72 rounded-full bg-accent/20 blur-3xl animate-float-slow"></div>
+  <div class="absolute bottom-20 right-10 size-96 rounded-full bg-gold/10 blur-3xl animate-float-slow" style="animation-delay:2s"></div>
+
+  <div class="container relative mx-auto max-w-7xl px-4 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 space-y-8">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass text-xs font-medium text-gold animate-fade-in">
+        ✨ <span class="font-bn">সরকার অনুমোদিত প্রশিক্ষণ কেন্দ্র</span> <span class="text-muted">· Pekua</span>
+      </div>
+      <h1 class="font-bn text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight">
+        আপনার <span class="text-gradient-gold">ক্যারিয়ার</span><br class="hidden sm:block"/>
+        শুরু হোক <span class="text-gradient">আজ থেকেই</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-muted max-w-xl">
+        <span class="text-white font-semibold">Learn. Build. Succeed.</span>
+        <span class="font-bn">দক্ষ প্রশিক্ষক, আধুনিক ল্যাব ও জব-রেডি কারিকুলাম — সবই এক ছাদের নিচে।</span>
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#courses" class="inline-flex items-center gap-2 h-14 px-7 rounded-2xl btn-accent font-bn font-semibold shadow-glow hover:scale-[1.03] transition">কোর্স দেখুন →</a>
+        <a href="#contact" class="inline-flex items-center gap-2 h-14 px-7 rounded-2xl glass font-bn font-semibold hover:bg-white/10 transition">এখনই ভর্তি হন</a>
+      </div>
+      <div class="flex flex-wrap items-center gap-6 pt-4">
+        <div class="text-sm">
+          <div class="font-bold">500+ <span class="font-bn font-normal text-muted">সফল শিক্ষার্থী</span></div>
+          <div class="text-gold text-xs">★★★★★ 5.0 Google Rating</div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 relative">
+      <div class="relative rounded-3xl overflow-hidden shadow-card border border-white/10">
+        <img src="assets/real-2.jpg" alt="lab" class="w-full h-auto object-cover"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/30 to-transparent"></div>
+      </div>
+      <div class="absolute -top-4 -right-4 glass rounded-2xl p-3 hidden sm:flex items-center gap-2 animate-float-slow">
+        <div class="size-8 rounded-lg bg-accent/20 grid place-items-center">✨</div>
+        <div class="text-xs">
+          <div class="font-semibold">Govt. Certified</div>
+          <div class="text-muted text-[10px] font-bn">সার্টিফিকেট</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="relative py-24">
+  <div class="container mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <div class="text-xs font-semibold tracking-widest uppercase text-accent mb-4">About · পরিচিতি</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight"><span class="font-bn">পেকুয়ার সবচেয়ে</span> <span class="text-gradient">trusted</span> <span class="font-bn">কম্পিউটার একাডেমি</span></h2>
+      <p class="font-bn text-muted mt-5 text-lg leading-relaxed">যুব উন্নয়ন কারিগরি কম্পিউটার একাডেমি — যেখানে আধুনিক প্রযুক্তি, অভিজ্ঞ প্রশিক্ষক ও বাস্তব-জীবনের প্রজেক্ট মিলে গড়ে তোলে আগামীর দক্ষ পেশাজীবী।</p>
+      <div class="grid grid-cols-3 gap-4 mt-8">
+        <div class="glass rounded-2xl p-5 text-center"><div class="text-3xl font-extrabold text-gradient-gold">8+</div><div class="text-xs text-muted font-bn mt-1">কোর্স</div></div>
+        <div class="glass rounded-2xl p-5 text-center"><div class="text-3xl font-extrabold text-gradient">500+</div><div class="text-xs text-muted font-bn mt-1">শিক্ষার্থী</div></div>
+        <div class="glass rounded-2xl p-5 text-center"><div class="text-3xl font-extrabold text-gradient-gold">5★</div><div class="text-xs text-muted font-bn mt-1">রেটিং</div></div>
+      </div>
+    </div>
+    <div class="reveal"><img src="assets/real-4.jpg" class="rounded-3xl shadow-card border border-white/10" alt="academy"/></div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="relative py-24">
+  <div class="container mx-auto max-w-7xl px-4">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <div class="text-xs font-semibold tracking-widest uppercase text-accent mb-5">Our Courses · কোর্সসমূহ</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight"><span class="font-bn">৮টি ক্যারিয়ার-রেডি</span> <span class="text-gradient">programs.</span></h2>
+      <p class="font-bn text-muted mt-4">শিল্প-মান অনুযায়ী সাজানো, হাতে-কলমে শেখানো, এবং চাকরির জন্য প্রস্তুত।</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5" id="courseGrid"></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="relative py-24">
+  <div class="container mx-auto max-w-7xl px-4">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <div class="text-xs font-semibold tracking-widest uppercase text-accent mb-5">Why Us · কেন আমরা</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold"><span class="font-bn">কেন আমাদের বেছে নেবেন?</span></h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="relative py-24">
+  <div class="container mx-auto max-w-7xl px-4">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <div class="text-xs font-semibold tracking-widest uppercase text-accent mb-5">Gallery · গ্যালারি</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold"><span class="font-bn">আমাদের ক্যাম্পাস</span></h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative py-24">
+  <div class="container mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-12">
+    <div class="reveal">
+      <div class="text-xs font-semibold tracking-widest uppercase text-accent mb-5">Contact · যোগাযোগ</div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight"><span class="font-bn">আজই ভর্তি হোন</span></h2>
+      <p class="font-bn text-muted mt-4 text-lg">আপনার প্রশ্ন, ভর্তি, বা কোর্স সম্পর্কে জানতে যোগাযোগ করুন।</p>
+      <div class="mt-8 space-y-4">
+        <div class="glass rounded-2xl p-5 flex items-center gap-4"><div class="size-12 rounded-xl bg-accent/15 grid place-items-center text-2xl">📍</div><div><div class="font-bn font-semibold">ঠিকানা</div><div class="text-sm text-muted">RXJ9+4H, Pekua, Cox's Bazar</div></div></div>
+        <a href="tel:01821133883" class="glass rounded-2xl p-5 flex items-center gap-4 hover:bg-white/10 transition"><div class="size-12 rounded-xl bg-accent/15 grid place-items-center text-2xl">📞</div><div><div class="font-bn font-semibold">ফোন</div><div class="text-sm text-muted">01821-133883 · 01873-958067</div></div></a>
+        <a href="mailto:ydtcta2022@gmail.com" class="glass rounded-2xl p-5 flex items-center gap-4 hover:bg-white/10 transition"><div class="size-12 rounded-xl bg-accent/15 grid place-items-center text-2xl">✉️</div><div><div class="font-bn font-semibold">ইমেইল</div><div class="text-sm text-muted">ydtcta2022@gmail.com</div></div></a>
+      </div>
+    </div>
+    <form class="glass rounded-3xl p-8 reveal space-y-4" onsubmit="event.preventDefault();alert('ধন্যবাদ! আমরা শীঘ্রই যোগাযোগ করব।');this.reset();">
+      <div><label class="text-sm font-bn">নাম</label><input required class="mt-2 w-full h-12 px-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none" placeholder="আপনার নাম"/></div>
+      <div><label class="text-sm font-bn">ফোন</label><input required class="mt-2 w-full h-12 px-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none" placeholder="01XXXXXXXXX"/></div>
+      <div><label class="text-sm font-bn">কোর্স</label><input class="mt-2 w-full h-12 px-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none" placeholder="যে কোর্সে আগ্রহী"/></div>
+      <div><label class="text-sm font-bn">বার্তা</label><textarea rows="4" class="mt-2 w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-accent outline-none" placeholder="আপনার বার্তা..."></textarea></div>
+      <button class="w-full h-14 rounded-2xl btn-accent font-bn font-semibold shadow-glow">আবেদন পাঠান</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 mt-10">
+  <div class="container mx-auto max-w-7xl px-4 py-14 grid md:grid-cols-4 gap-10">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="size-12 rounded-xl bg-white/95 grid place-items-center shadow-glow p-1.5"><img src="assets/logo.png" class="size-full object-contain" alt="logo"/></div>
+        <div><div class="font-bn font-bold">যুব উন্নয়ন কারিগরি কম্পিউটার একাডেমি</div><div class="text-xs text-muted">Jubo Unnayan Karigoree Computer Academy</div></div>
+      </div>
+      <p class="text-sm text-muted font-bn max-w-md">পেকুয়ার সবচেয়ে বিশ্বস্ত কম্পিউটার প্রশিক্ষণ কেন্দ্র — যেখানে স্বপ্ন পরিণত হয় ক্যারিয়ারে।</p>
+    </div>
+    <div>
+      <div class="text-sm font-bold mb-4 font-bn">দ্রুত লিঙ্ক</div>
+      <ul class="space-y-2 text-sm text-muted">
+        <li><a href="#about" class="hover:text-accent2">About</a></li>
+        <li><a href="#courses" class="hover:text-accent2">Courses</a></li>
+        <li><a href="#why" class="hover:text-accent2">Why Us</a></li>
+        <li><a href="#gallery" class="hover:text-accent2">Gallery</a></li>
+        <li><a href="#contact" class="hover:text-accent2">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="text-sm font-bold mb-4 font-bn">যোগাযোগ</div>
+      <ul class="space-y-2 text-sm text-muted">
+        <li>📍 RXJ9+4H, Pekua</li>
+        <li>📞 01821-133883</li>
+        <li>📞 01873-958067</li>
+        <li>✉️ ydtcta2022@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="container mx-auto max-w-7xl px-4 py-5 text-xs text-muted text-center font-bn">© <span id="yr"></span> যুব উন্নয়ন কারিগরি কম্পিউটার একাডেমি — সকল অধিকার সংরক্ষিত।</div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/8801821133883" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-40 size-14 rounded-full btn-accent shadow-glow grid place-items-center text-2xl hover:scale-110 transition">💬</a>
+
+<script>
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('glass-strong', scrollY > 24));
+
+  // Courses
+  const courses = [
+    ['💼','অফিস ম্যানেজমেন্ট','Office Management','MS Word, Excel, PowerPoint — workplace ready.','3 মাস',false],
+    ['🖥️','ডিপ্লোমা ইন কম্পিউটার সায়েন্স','Diploma in Computer Science','Foundations, programming, networking & more.','12 মাস',true],
+    ['🎨','গ্রাফিক্স ডিজাইন','Graphics Design','Photoshop, Illustrator — design like a pro.','4 মাস',true],
+    ['🌐','ওয়েবসাইট ডিজাইন','Website Design','HTML, CSS, modern responsive websites.','6 মাস',false],
+    ['🔧','কম্পিউটার হার্ডওয়্যার','Computer Hardware','Repair, assemble, troubleshoot any PC.','3 মাস',false],
+    ['💸','আউটসোর্সিং','Outsourcing','Earn online — freelance marketplaces mastery.','5 মাস',true],
+    ['📐','অটোক্যাড (2D ও 3D)','AutoCAD (2D & 3D)','Architectural & engineering drafting skills.','4 মাস',false],
+    ['📣','ডিজিটাল মার্কেটিং','Digital Marketing','SEO, social media, ads — grow brands online.','4 মাস',true],
+  ];
+  document.getElementById('courseGrid').innerHTML = courses.map(([i,bn,en,d,dur,pop])=>`
+    <article class="reveal group relative glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-glow transition-all overflow-hidden">
+      ${pop?'<div class="absolute top-4 right-4 bg-gradient-to-r from-gold to-yellow-300 text-bg text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Popular</div>':''}
+      <div class="size-12 rounded-xl bg-accent/15 grid place-items-center mb-5 text-2xl">${i}</div>
+      <h3 class="font-bn text-lg font-bold leading-snug">${bn}</h3>
+      <div class="text-xs text-muted mb-3">${en}</div>
+      <p class="text-sm text-muted leading-relaxed mb-5">${d}</p>
+      <div class="flex items-center justify-between">
+        <span class="font-bn text-xs glass px-2.5 py-1 rounded-full">⏱ ${dur}</span>
+        <a href="#contact" class="text-accent2 text-sm font-semibold font-bn">বিস্তারিত ↗</a>
+      </div>
+    </article>`).join('');
+
+  // Why us
+  const why = [
+    ['🏆','সরকার অনুমোদিত','Government certified courses & certificates that employers trust.'],
+    ['👨‍🏫','অভিজ্ঞ প্রশিক্ষক','Industry-experienced instructors with years of teaching.'],
+    ['💻','আধুনিক ল্যাব','State-of-the-art computer labs with the latest software.'],
+    ['🤝','জব সাপোর্ট','Career guidance and placement support after completion.'],
+  ];
+  document.getElementById('whyGrid').innerHTML = why.map(([i,t,d])=>`
+    <div class="reveal glass rounded-2xl p-6 hover:-translate-y-2 hover:shadow-glow transition-all">
+      <div class="size-12 rounded-xl bg-accent/15 grid place-items-center mb-5 text-2xl">${i}</div>
+      <h3 class="font-bn text-lg font-bold mb-2">${t}</h3>
+      <p class="text-sm text-muted">${d}</p>
+    </div>`).join('');
+
+  // Gallery
+  const imgs = ['real-1.jpg','real-3.jpg','real-5.jpg','real-6.jpg','real-7.jpg','real-8.jpg','real-9.jpg','real-10.jpg'];
+  document.getElementById('galleryGrid').innerHTML = imgs.map(s=>`
+    <div class="reveal rounded-2xl overflow-hidden border border-white/10 group">
+      <img src="assets/${s}" loading="lazy" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500"/>
+    </div>`).join('');
+
+  // Reveal observer
+  const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
